@@ -7984,15 +7984,6 @@ For optimization use <strong>Task Groups</strong> and <strong>sensors</strong> t
 </ul>
 </li>
 </ol>
-<hr/>
-<h3 id="Proposed-Scalable-Solution-for-Data-Extraction"><strong>Proposed Scalable Solution for Data Extraction</strong><a class="anchor-link" href="#Proposed-Scalable-Solution-for-Data-Extraction">¶</a></h3><ul>
-<li><strong>Replace Cloud Functions with Cloud Run</strong>:<ul>
-<li>Deploy a containerized application on <strong>Cloud Run</strong> for ERP API calls and schema validation.</li>
-<li>Use <strong>Cloud Scheduler</strong> to trigger the service at regular intervals.</li>
-<li>Benefits: Better scalability, concurrency, and cost efficiency.</li>
-</ul>
-</li>
-</ul>
 <h2 id="Data-Accuracy-and-Reliability-Strategies"><a id="toc3_2_"></a><a href="#toc0_">Data Accuracy and Reliability Strategies</a><a class="anchor-link" href="#Data-Accuracy-and-Reliability-Strategies">¶</a></h2><ol>
 <li><p><strong>Schema and Data Type Validation</strong><br/>
 Validate API responses against a JSON Schema and apply strict data type checks in Dataflow. Non-conforming records are quarantined</p>
